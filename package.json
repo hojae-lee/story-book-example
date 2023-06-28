@@ -2,10 +2,16 @@
   "name": "cdd-with-storybook",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
-  "main": "index.js",
+  "main": "dist/esm/index.js",
   "author": "hojae-lee",
   "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "rollup -c",
