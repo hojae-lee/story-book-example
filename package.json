@@ -1,6 +1,6 @@
 {
   "name": "cdd-with-storybook-hojaelee",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/esm/index.js",
   "author": "hojae-lee",
   "license": "MIT",
