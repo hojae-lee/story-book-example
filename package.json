@@ -3,9 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "index.js",
+  "author": "hojae-lee",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "rollup -c",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
@@ -27,6 +30,7 @@
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^4.0.0",
+    "esbuild": "^0.18.10",
     "eslint": "^8.38.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
@@ -34,7 +38,13 @@
     "eslint-plugin-storybook": "^0.6.12",
     "prop-types": "15.8.1",
     "rollup": "^3.25.3",
+    "rollup-plugin-esbuild": "^5.0.0",
     "storybook": "7.0.23",
     "vite": "^4.3.9"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.0.0-rc.6"
   }
 }
