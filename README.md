@@ -11,12 +11,10 @@
    그래서 이러한 경우를 사전에 미리 방지할 수 있도록 필수 버전을 넣어서 특정 버전이 아니면 설치되지 못하도록 하는 기능을 가짐.
 8. rollup-peer-deps 설치
 9. esm, cjs output 설정 변경
+10. npm 배포 (npm login => 배포)
 
-## install
+참고: 폴더명, 패키지명 케밥 케이스 사용 (`example-add`)
 
-```
-yarn create vite cdd-with-storybook --template react
-npx storybook@latest init
-yarn add styled-component
-yarn add rollup --dev
-```
+## github
+
+https://github.com/hojae-lee/story-book-example
