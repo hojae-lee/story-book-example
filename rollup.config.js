@@ -1,4 +1,5 @@
 import esbuild from "rollup-plugin-esbuild";
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
 export default {
   input: "src/index.js",
@@ -17,5 +18,6 @@ export default {
         __VERSION__: '"x.y.z"',
       },
     }),
+    peerDepsExternal(),
   ],
 };
